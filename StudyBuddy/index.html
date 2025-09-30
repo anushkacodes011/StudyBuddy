@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StudyBuddy — Home</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">StudyBuddy</a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="course1.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <a class="btn btn-primary" href="courses.html">Start Learning</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Learn web development with short, hands-on lessons</h1>
+          <p class="lead">Bite-sized lessons, quick quizzes and practical projects — build skills by doing.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="courses.html">Browse Courses</a>
+            <a class="btn btn-ghost" href="#features">How it works</a>
+          </div>
+        </div>
+
+        <!-- simple visual placeholder (replace with image in assets/) -->
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card-title">HTML Crash Course</div>
+            <div class="hero-card-desc">10 lessons · 2 hours</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Why StudyBuddy</h2>
+        <div class="features-grid">
+          <article class="feature">
+            <h3>Interactive Quizzes</h3>
+            <p>Practice after each lesson and see instant results.</p>
+          </article>
+          <article class="feature">
+            <h3>Bite-sized Lessons</h3>
+            <p>Short lessons that you can finish in 10–20 minutes.</p>
+          </article>
+          <article class="feature">
+            <h3>Projects</h3>
+            <p>Small projects to add to your portfolio and GitHub.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED COURSES -->
+    <section class="courses">
+      <div class="container">
+        <h2>Featured Courses</h2>
+        <div class="courses-grid">
+          <article class="course-card">
+            <div class="course-thumb"></div>
+            <h4>HTML Basics</h4>
+            <p>Learn structure and semantic tags.</p>
+            <a class="btn btn-outline" href="course1.html">View</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-thumb"></div>
+            <h4>CSS Styling</h4>
+            <p>Layouts, flexbox, grid and responsive design.</p>
+            <a class="btn btn-outline" href="course2.html">View</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-thumb"></div>
+            <h4>JS Essentials</h4>
+            <p>Intro to DOM, events and small interactions.</p>
+            <a class="btn btn-outline" href="course3.html">View</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-thumb"></div>
+            <h4>Project: Portfolio</h4>
+            <p>Build a portfolio and deploy it online.</p>
+            <a class="btn btn-outline" href="course4.html">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> StudyBuddy • Built with HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set year (optional, tiny JS)
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>

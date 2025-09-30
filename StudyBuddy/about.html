@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - StudyBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">StudyBuddy</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <main class="about-page container">
+    <h1>About StudyBuddy</h1>
+    <p class="lead">
+      StudyBuddy is a simple, student-friendly platform designed to make learning interactive and fun.
+      From courses to quizzes, everything here is focused on helping you learn by doing.
+    </p>
+
+    <section class="about-mission">
+      <h2>🎯 My Mission</h2>
+      <p>
+        My goal is to provide an easy-to-use learning experience for students, 
+        making education more accessible with free resources, structured courses, 
+        and engaging quizzes that test your understanding in real time.
+      </p>
+    </section>
+
+    <section class="about-team">
+      <h2>👩‍💻 Who Built This?</h2>
+      <p>
+        Hiee there!! It's me Anushka btech 2nd year student at Lucknow University. <br>
+
+        This platform was created by me :) , who is passionate learner who wanted to 
+        bridge the gap between classroom knowledge and practical application. 
+        Whether you are a beginner or just refreshing your skills, 
+        this site is for you!!:)
+      </p>
+    </section>
+
+    <section class="about-contact">
+      <h2>📬 Get in Touch</h2>
+      <p>
+        Have feedback or ideas? Reach out at 
+        <a href="codegrowwithanu@gmail.com">codegrowwithanu@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> StudyBuddy</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>

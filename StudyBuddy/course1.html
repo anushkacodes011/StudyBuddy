@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basics - StudyBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header (same as homepage for consistency) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">StudyBuddy</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN COURSE CONTENT -->
+  <main class="course-page container">
+    <h1>HTML Basics</h1>
+    <p class="lead">Understand the foundation of web pages: tags, elements, and structure.</p>
+
+    <!-- Video or Image -->
+    <div class="course-media">
+      <iframe width="100%" height="380" 
+        src="https://www.youtube.com/embed/qz0aGYrrlhU" 
+        title="HTML Tutorial for Beginners" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Lesson Content -->
+    <section class="lesson">
+      <h2>Lesson 1: What is HTML?</h2>
+      <p>
+        HTML stands for <strong>HyperText Markup Language</strong>. It is the standard language
+        used to create and design web pages. HTML describes the structure of a web page
+        using elements like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>.
+      </p>
+      <p>
+        Example:
+      </p>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </section>
+
+    <section class="lesson">
+      <h2>Lesson 2: Common Tags</h2>
+      <ul>
+        <li><code>&lt;h1&gt; - &lt;h6&gt;</code>: Headings</li>
+        <li><code>&lt;p&gt;</code>: Paragraph</li>
+        <li><code>&lt;a&gt;</code>: Links</li>
+        <li><code>&lt;img&gt;</code>: Images</li>
+        <li><code>&lt;div&gt;</code>: Division/container</li>
+      </ul>
+    </section>
+
+    <!-- Call-to-action -->
+    <div class="course-cta">
+      <a class="btn btn-primary" href="quiz.html">Take Quiz →</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> StudyBuddy</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
